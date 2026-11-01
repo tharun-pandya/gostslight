@@ -1,0 +1,6 @@
+# Architecture
+Modular monolith: `api/` (thin routers) → `services/` (logic) → `adapters/` (Whisper, Ollama, e5) and `security/` (crypto, sessions, upload checks).
+**Storage:** table `objects(id, kind, story_id, blob)`. `blob = nonce(12) ‖ AES-256-GCM(json)`, AAD = `kind:id`, so blobs can't be swapped between records. Audio lives in `data/audio/<id>.bin`, encrypted with AAD = story id. `vault.json` holds salt, KDF params and an encrypted verifier (wrong passphrase ⇒ GCM auth failure).
+**Jobs:** one worker thread (so Whisper and Gemma never run together), max 4 pending, duplicate jobs for the same story rejected (HTTP 429). Status persisted encrypted; jobs left `running` after a restart are marked failed on next unlock. A job is `done` only after its result was saved and re-read.
+**Evidence rule:** `evidence_service.validate_candidates` normalises case/punctuation/whitespace and requires the quote to be a substring of the cited non-redacted segment; timestamps are overwritten from the transcript.
+**Retrieval:** lexical token overlap (small stop list, light stemming) always available; e5 embeddings (`query:` / `passage:` prefixes) cached encrypted per story and rebuilt when text changes.

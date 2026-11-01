@@ -1,0 +1,3 @@
+# Threat model (informal, unaudited)
+**Protects against:** theft of the disk/data folder while locked; other websites calling the API (Host/Origin checks, CORS allow-list, token header); tampered blobs (GCM); malicious uploads (magic-byte sniffing, size/duration limits, no trust in extension); prompt injection in transcripts (evidence verified in code; model output schema-validated).
+**Does not protect against:** malware on the unlocked machine, memory inspection while unlocked, other local users who can reach 127.0.0.1 and steal the session token, weak passphrases, traffic analysis of file sizes, a compromised Ollama/model binary. Deletion cannot guarantee physical erasure on SSDs.

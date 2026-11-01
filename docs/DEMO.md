@@ -1,0 +1,2 @@
+# Demo
+Static demo = `VITE_DEMO_MODE=true npm run build`. All data is fictional (`sample_data/demo.json`, marked DEMO DATA): 3 stories, transcript segments with timestamps, 7 approved memory cards with evidence, a derived timeline and 5 example questions (4 cited answers + 1 abstention). The demo has no audio files. Real transcription/extraction are shown only in the local app (see README video workflow).

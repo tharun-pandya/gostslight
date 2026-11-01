@@ -1,0 +1,344 @@
+{
+ "label": "DEMO DATA — fictional sample memories. No real family.",
+ "stories": [
+  {
+   "id": "demo_s1",
+   "title": "Sankranti in the Old Kitchen",
+   "storyteller": "Demo Grandmother (Lakshmi)",
+   "recorded_on": "1998-01-14",
+   "places": [
+    "Family kitchen"
+   ],
+   "language": "en",
+   "duration": 47,
+   "consent": true,
+   "status": "transcribed"
+  },
+  {
+   "id": "demo_s2",
+   "title": "The Bullock-Cart Road to the Village",
+   "storyteller": "Demo Grandfather (Venkat)",
+   "recorded_on": "2003-05-02",
+   "places": [
+    "Rangapuram (fictional)"
+   ],
+   "language": "en",
+   "duration": 52,
+   "consent": true,
+   "status": "transcribed"
+  },
+  {
+   "id": "demo_s3",
+   "title": "Pesarattu on Rainy Mornings",
+   "storyteller": "Demo Aunt (Padma)",
+   "recorded_on": null,
+   "places": [],
+   "language": "en",
+   "duration": 38,
+   "consent": true,
+   "status": "transcribed"
+  }
+ ],
+ "transcripts": {
+  "demo_s1": [
+   {
+    "id": "segment_001",
+    "start": 0,
+    "end": 11.8,
+    "text": "This was in the old house, when I was about your age.",
+    "original_text": "This was in the old house, when I was about your age.",
+    "speaker": "Lakshmi",
+    "redacted": false
+   },
+   {
+    "id": "segment_002",
+    "start": 12.4,
+    "end": 18.2,
+    "text": "Every Sankranti, we used to prepare ariselu together.",
+    "original_text": "Every Sankranti, we used to prepare ariselu together.",
+    "speaker": "Lakshmi",
+    "redacted": false
+   },
+   {
+    "id": "segment_003",
+    "start": 18.2,
+    "end": 26.0,
+    "text": "My mother-in-law always prepared the jaggery syrup first.",
+    "original_text": "My mother-in-law always prepared the jaggery syrup first.",
+    "speaker": "Lakshmi",
+    "redacted": false
+   },
+   {
+    "id": "segment_004",
+    "start": 26.0,
+    "end": 36.5,
+    "text": "Everyone in the family would sit in the kitchen and wait for the first batch.",
+    "original_text": "Everyone in the family would sit in the kitchen and wait for the first batch.",
+    "speaker": "Lakshmi",
+    "redacted": false
+   }
+  ],
+  "demo_s2": [
+   {
+    "id": "segment_001",
+    "start": 0,
+    "end": 9.0,
+    "text": "We left before sunrise, the bullock cart creaking all the way.",
+    "original_text": "We left before sunrise, the bullock cart creaking all the way.",
+    "speaker": "Venkat",
+    "redacted": false
+   },
+   {
+    "id": "segment_002",
+    "start": 9.0,
+    "end": 21.5,
+    "text": "The road to Rangapuram crossed a small stream, and we always stopped there to drink water.",
+    "original_text": "The road to Rangapuram crossed a small stream, and we always stopped there to drink water.",
+    "speaker": "Venkat",
+    "redacted": false
+   },
+   {
+    "id": "segment_003",
+    "start": 21.5,
+    "end": 34.0,
+    "text": "My father would hum a song the whole way, I never learned its name.",
+    "original_text": "My father would hum a song the whole way, I never learned its name.",
+    "speaker": "Venkat",
+    "redacted": false
+   }
+  ],
+  "demo_s3": [
+   {
+    "id": "segment_001",
+    "start": 0,
+    "end": 8.5,
+    "text": "On rainy mornings my mother made pesarattu with green gram.",
+    "original_text": "On rainy mornings my mother made pesarattu with green gram.",
+    "speaker": "Padma",
+    "redacted": false
+   },
+   {
+    "id": "segment_002",
+    "start": 8.5,
+    "end": 19.0,
+    "text": "She would say, patience makes the batter taste better.",
+    "original_text": "She would say, patience makes the batter taste better.",
+    "speaker": "Padma",
+    "redacted": false
+   },
+   {
+    "id": "segment_003",
+    "start": 19.0,
+    "end": 30.0,
+    "text": "We ate it with ginger chutney on the veranda.",
+    "original_text": "We ate it with ginger chutney on the veranda.",
+    "speaker": "Padma",
+    "redacted": false
+   }
+  ]
+ },
+ "memories": [
+  {
+   "id": "demo_m1",
+   "story_id": "demo_s1",
+   "category": "TRADITION",
+   "title": "Preparing ariselu at Sankranti",
+   "description": "The family prepared ariselu together every Sankranti.",
+   "confidence": 0.91,
+   "status": "approved",
+   "evidence": [
+    {
+     "segment_id": "segment_002",
+     "start_seconds": 12.4,
+     "end_seconds": 18.2,
+     "exact_quote": "Every Sankranti, we used to prepare ariselu together."
+    }
+   ],
+   "story_title": "Sankranti in the Old Kitchen"
+  },
+  {
+   "id": "demo_m2",
+   "story_id": "demo_s1",
+   "category": "FOOD_OR_RECIPE",
+   "title": "Jaggery syrup first",
+   "description": "The jaggery syrup was always prepared first.",
+   "confidence": 0.88,
+   "status": "approved",
+   "evidence": [
+    {
+     "segment_id": "segment_003",
+     "start_seconds": 18.2,
+     "end_seconds": 26.0,
+     "exact_quote": "My mother-in-law always prepared the jaggery syrup first."
+    }
+   ],
+   "story_title": "Sankranti in the Old Kitchen"
+  },
+  {
+   "id": "demo_m3",
+   "story_id": "demo_s1",
+   "category": "EVENT",
+   "title": "Family gathered in the kitchen",
+   "description": "Everyone sat in the kitchen waiting for the first batch.",
+   "confidence": 0.85,
+   "status": "approved",
+   "evidence": [
+    {
+     "segment_id": "segment_004",
+     "start_seconds": 26.0,
+     "end_seconds": 36.5,
+     "exact_quote": "Everyone in the family would sit in the kitchen and wait for the first batch."
+    }
+   ],
+   "story_title": "Sankranti in the Old Kitchen"
+  },
+  {
+   "id": "demo_m4",
+   "story_id": "demo_s2",
+   "category": "PLACE",
+   "title": "Stream on the road to Rangapuram",
+   "description": "The journey crossed a small stream where they stopped to drink water.",
+   "confidence": 0.9,
+   "status": "approved",
+   "evidence": [
+    {
+     "segment_id": "segment_002",
+     "start_seconds": 9.0,
+     "end_seconds": 21.5,
+     "exact_quote": "The road to Rangapuram crossed a small stream, and we always stopped there to drink water."
+    }
+   ],
+   "story_title": "The Bullock-Cart Road to the Village"
+  },
+  {
+   "id": "demo_m5",
+   "story_id": "demo_s2",
+   "category": "SONG_OR_MUSIC_REFERENCE",
+   "title": "A father's unnamed song",
+   "description": "The storyteller's father hummed a song whose name was never learned.",
+   "confidence": 0.8,
+   "status": "approved",
+   "evidence": [
+    {
+     "segment_id": "segment_003",
+     "start_seconds": 21.5,
+     "end_seconds": 34.0,
+     "exact_quote": "My father would hum a song the whole way, I never learned its name."
+    }
+   ],
+   "story_title": "The Bullock-Cart Road to the Village"
+  },
+  {
+   "id": "demo_m6",
+   "story_id": "demo_s3",
+   "category": "FOOD_OR_RECIPE",
+   "title": "Pesarattu with green gram",
+   "description": "Pesarattu was made on rainy mornings.",
+   "confidence": 0.92,
+   "status": "approved",
+   "evidence": [
+    {
+     "segment_id": "segment_001",
+     "start_seconds": 0,
+     "end_seconds": 8.5,
+     "exact_quote": "On rainy mornings my mother made pesarattu with green gram."
+    }
+   ],
+   "story_title": "Pesarattu on Rainy Mornings"
+  },
+  {
+   "id": "demo_m7",
+   "story_id": "demo_s3",
+   "category": "SAYING_OR_EXPRESSION",
+   "title": "Patience and the batter",
+   "description": "A saying about patience making the batter taste better.",
+   "confidence": 0.83,
+   "status": "approved",
+   "evidence": [
+    {
+     "segment_id": "segment_002",
+     "start_seconds": 8.5,
+     "end_seconds": 19.0,
+     "exact_quote": "She would say, patience makes the batter taste better."
+    }
+   ],
+   "story_title": "Pesarattu on Rainy Mornings"
+  }
+ ],
+ "qa": [
+  {
+   "q": "What did grandmother say about Sankranti?",
+   "answer": "The storyteller described preparing ariselu together with the family every Sankranti.",
+   "citations": [
+    {
+     "story_id": "demo_s1",
+     "story_title": "Sankranti in the Old Kitchen",
+     "segment_id": "segment_002",
+     "start": 12.4,
+     "end": 18.2,
+     "text": "Every Sankranti, we used to prepare ariselu together."
+    }
+   ],
+   "mode": "gemma"
+  },
+  {
+   "q": "Who prepared the jaggery syrup?",
+   "answer": "According to the recording, the storyteller's mother-in-law always prepared the jaggery syrup first.",
+   "citations": [
+    {
+     "story_id": "demo_s1",
+     "story_title": "Sankranti in the Old Kitchen",
+     "segment_id": "segment_003",
+     "start": 18.2,
+     "end": 26.0,
+     "text": "My mother-in-law always prepared the jaggery syrup first."
+    }
+   ],
+   "mode": "gemma"
+  },
+  {
+   "q": "What places did grandfather describe?",
+   "answer": "He described the road to Rangapuram, which crossed a small stream where the family stopped to drink water.",
+   "citations": [
+    {
+     "story_id": "demo_s2",
+     "story_title": "The Bullock-Cart Road to the Village",
+     "segment_id": "segment_002",
+     "start": 9.0,
+     "end": 21.5,
+     "text": "The road to Rangapuram crossed a small stream, and we always stopped there to drink water."
+    }
+   ],
+   "mode": "gemma"
+  },
+  {
+   "q": "What was eaten on rainy mornings?",
+   "answer": "The storyteller remembered pesarattu made with green gram, eaten with ginger chutney.",
+   "citations": [
+    {
+     "story_id": "demo_s3",
+     "story_title": "Pesarattu on Rainy Mornings",
+     "segment_id": "segment_001",
+     "start": 0,
+     "end": 8.5,
+     "text": "On rainy mornings my mother made pesarattu with green gram."
+    },
+    {
+     "story_id": "demo_s3",
+     "story_title": "Pesarattu on Rainy Mornings",
+     "segment_id": "segment_003",
+     "start": 19.0,
+     "end": 30.0,
+     "text": "We ate it with ginger chutney on the veranda."
+    }
+   ],
+   "mode": "gemma"
+  },
+  {
+   "q": "What did grandfather say about cricket?",
+   "answer": "I couldn't find this memory in your archive. You may need to record another story or review an existing transcript.",
+   "citations": [],
+   "mode": "abstained"
+  }
+ ]
+}
